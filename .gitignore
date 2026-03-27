@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.env
+.venv
+venv/
+
+# Data files (keep .gitkeep but ignore generated data)
+framework/data/*.csv
+framework/data/*.json
+framework/data/*.parquet
+!framework/data/.gitkeep
+
+# Generated reports (keep .gitkeep but ignore generated reports)
+framework/reports/*.md
+!framework/reports/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
