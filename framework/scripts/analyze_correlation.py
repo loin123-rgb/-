@@ -110,7 +110,7 @@ def print_correlation_table(corr_matrix: pd.DataFrame, symbol_names: dict) -> No
         index=symbol_names, columns=symbol_names
     )
     # 格式化：相關係數顯示2位小數
-    formatted = renamed.applymap(lambda x: f"{x:.2f}" if not pd.isna(x) else "N/A")
+    formatted = renamed.map(lambda x: f"{x:.2f}" if not pd.isna(x) else "N/A")
     print(formatted.to_string())
 
 
